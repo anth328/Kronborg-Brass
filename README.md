@@ -10,7 +10,7 @@ This is our 3rd semester final project (Datamatiker, Systemudvikling + Programme
 | :-- | :-- | :-- |
 | Micki Mogensen | LordGlarthir | Product Owner, Developer, QA, UX/UI |
 | André P. Thai | anth328 | Scrum Master, Developer, QA, UX/UI |
-| Malik Magh | magh0003 | Developer, QA, UX/UI |
+| Malik Ghaleth | magh0003 | Developer, QA, UX/UI |
 | Daniel K. Ugueto | DanielUgueto | Developer, QA, UX/UI |
 
 ## Features (current scope)
