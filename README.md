@@ -87,10 +87,10 @@ cp .env.example .env
 | Variable | Description |
 | :-- | :-- |
 | `MYSQL_ROOT_PASSWORD` | Password for the MySQL root user (required, choose your own) |
-| `MYSQL_DATABASE` | Name of the database (default in the template: `orchestra123`) |
+| `MYSQL_DATABASE` | Name of the database (required, choose your own) |
 | `MYSQL_USER` | Application database user (required, choose your own) |
 | `MYSQL_PASSWORD` | Password for the application user (required, choose your own) |
-| `MYSQL_PORT` | Port on your own machine that MySQL is reachable on (default: `3306`) |
+| `MYSQL_PORT` | Port on your own machine that MySQL is reachable on (required, choose your own) |
 
 The password and user values are empty in the template and must be filled in before starting the database.
 
