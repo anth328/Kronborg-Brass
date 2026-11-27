@@ -10,7 +10,10 @@ permissions:
   packages: write
 
 jobs:
+  test:
+    uses: ./.github/workflows/ci.yml
   build:
+    needs: test
     runs-on: ubuntu-latest
 
     steps:
@@ -36,4 +39,6 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/anth328/kronborg:dev
+          tags: |
+            ghcr.io/anth328/kronborg:dev
+            ghcr.io/anth328/kronborg:${{ github.sha }}
