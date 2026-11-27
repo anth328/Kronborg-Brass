@@ -36,4 +36,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/OWNER/kronborg:dev
+          tags: ghcr.io/anth328/kronborg:dev
