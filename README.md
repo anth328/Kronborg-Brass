@@ -49,14 +49,15 @@ Planned but **outside current scope**: sheet music, mailing list, contact/bookin
 ## Project structure
 
 ```
-.
-├── src/                   # Spring Boot application (main code and tests)
-├── pom.xml                # Maven build
-├── mvnw, mvnw.cmd         # Maven wrapper
-├── docker-compose.yaml    # Docker Compose setup
-├── .env.example           # Template for local environment variables
-├── LICENSE                # MIT
-└── README.md
+kronborg-brass/
+├── src/
+│   ├── main/java/ek/dk/kronborgbrass/   # controller, model, service, repository
+│   ├── main/resources/                  # application.properties, static files
+│   └── test/                            # tests
+├── .github/workflows/ci.yml             # CI pipeline
+├── docker-compose.yaml                  # App + MySQL
+├── .env.example                         # Template for local environment variables
+└── pom.xml
 ```
 
 ## Getting started
