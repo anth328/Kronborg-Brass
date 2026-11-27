@@ -50,42 +50,14 @@ Planned but **outside current scope**: sheet music, mailing list, contact/bookin
 
 ```
 kronborg-brass/
-├── .github/
-│   └── workflows/
-│       └── ci.yml                      # Build and test pipeline
 ├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── ek/dk/kronborgbrass/
-│   │   │       ├── KronborgBrassApplication.java
-│   │   │       ├── config/             # Security, CORS and other configuration
-│   │   │       ├── controller/
-│   │   │       │   └── UserController.java
-│   │   │       ├── dto/                # Request/response objects
-│   │   │       ├── exception/          # Custom exceptions and global handler
-│   │   │       ├── model/
-│   │   │       │   ├── User.java
-│   │   │       │   └── Collection.java
-│   │   │       ├── repository/         # Spring Data JPA repositories
-│   │   │       └── service/            # Business logic (interfaces + impl)
-│   │   └── resources/
-│   │       ├── static/                 # CSS, JS, images
-│   │       ├── templates/              # Views (if server-rendered)
-│   │       └── application.properties
-│   └── test/
-│       └── java/
-│           └── ek/dk/kronborgbrass/    # Mirrors main package structure
-│               ├── controller/
-│               ├── service/
-│               └── repository/
-├── .env.example                        # Template for local environment variables
-├── .gitignore
-├── docker-compose.yaml                 # App + MySQL setup
-├── Dockerfile                          # Container image for the app
-├── mvnw, mvnw.cmd                      # Maven wrapper
-├── pom.xml                             # Maven build
-├── LICENSE                             # MIT
-└── README.md
+│   ├── main/java/ek/dk/kronborgbrass/   # controller, model, service, repository
+│   ├── main/resources/                  # application.properties, static files
+│   └── test/                            # tests
+├── .github/workflows/ci.yml             # CI pipeline
+├── docker-compose.yaml                  # App + MySQL
+├── .env.example                         # Template for local environment variables
+└── pom.xml
 ```
 
 ## Getting started
