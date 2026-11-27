@@ -1,0 +1,4 @@
+beta.kronborgbrass.dk {
+    encode zstd gzip
+    reverse_proxy app:8080
+}
